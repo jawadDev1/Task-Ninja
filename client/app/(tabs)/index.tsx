@@ -36,7 +36,7 @@ const index = () => {
   const { colors } = useTheme();
   // Zustand stores
   const { user, getCurrentUser } = useUserStore();
-  const { getRecentTasks, pending, error, success, tasks, getLastDateTasks } =
+  const { getRecentTasks, pending, error, success, tasks, getLastDateTasks, clearTasks } =
     useTasksStore();
 
   const { notification } = usePushNotifications();
@@ -67,10 +67,6 @@ const index = () => {
       });
     }
 
-    return () => {
-      
-    }
-
   }, [success, error]);
 
   useEffect(() => {
@@ -88,6 +84,12 @@ const index = () => {
       getLastDateTasks();
     }
   }, [barPosition]);
+
+  useEffect(() => {
+    return () => {
+      clearTasks();
+    }
+  }, [])
 
   return (
     <SafeAreaView edges={["top", "bottom"]} style={{ flex: 1 }}>

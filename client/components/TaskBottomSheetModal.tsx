@@ -43,8 +43,6 @@ interface formValues {
   priority: string;
 }
 
-const dummyCategory = ["Tasks", "Work", "Travel"];
-
 const TaskBottomSheetModal = forwardRef<Ref>((props, ref) => {
   const { pending, createTask, success, error } = useTasksStore();
   const { categories, getCategories } = useCategoryStore();
@@ -92,16 +90,16 @@ const TaskBottomSheetModal = forwardRef<Ref>((props, ref) => {
         text1: error,
       });
     }
+
+    return () => {
+      setSelectedCategory("Select Category");
+      setSelectedPriority("Select Priority");
+    };
   }, [error, success]);
 
   useEffect(() => {
     if (categories.length == 0) {
       getCategories();
-    }
-
-    return () => {
-      setSelectedCategory("Select Category")
-      setSelectedPriority("Select Priority")
     }
   }, []);
 
@@ -172,14 +170,13 @@ const TaskBottomSheetModal = forwardRef<Ref>((props, ref) => {
                   mode="dropdown"
                 >
                   <Picker.Item
-                      label={"Select Category"}
-                      value={'Select Category'}
-                      style={{
-                        color: "#fff",
-                        backgroundColor: colors.background,
-                      }}
-                      
-                    />
+                    label={"Select Category"}
+                    value={"Select Category"}
+                    style={{
+                      color: "#fff",
+                      backgroundColor: colors.background,
+                    }}
+                  />
                   {categories.map((category: any) => (
                     <Picker.Item
                       label={category.name}
@@ -206,14 +203,13 @@ const TaskBottomSheetModal = forwardRef<Ref>((props, ref) => {
                   mode="dropdown"
                 >
                   <Picker.Item
-                      label={"Select Priority"}
-                      value={'Select Priority'}
-                      style={{
-                        color: "#fff",
-                        backgroundColor: colors.background,
-                      }}
-                      
-                    />
+                    label={"Select Priority"}
+                    value={"Select Priority"}
+                    style={{
+                      color: "#fff",
+                      backgroundColor: colors.background,
+                    }}
+                  />
                   {["LOW", "MEDIUM", "HIGH"].map((priority, i) => (
                     <Picker.Item
                       label={priority}

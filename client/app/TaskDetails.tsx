@@ -67,7 +67,7 @@ const Details = () => {
         </View>
       </View>
       <View style={{ flex: 1 }} />
-      <TouchableOpacity onPress={handleTaskCompleted} style={styles.bottomBar} >
+      <TouchableOpacity onPress={handleTaskCompleted} style={styles.bottomBar} activeOpacity={0.8}>
         <Text style={[styles.bottomBarText, { color: colors.primary }]}>
           Mark as completed
         </Text>

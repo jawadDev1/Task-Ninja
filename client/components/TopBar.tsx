@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { useTheme } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 import { format, parseISO } from "date-fns";
@@ -29,7 +29,7 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default memo(TopBar);
 
 const styles = StyleSheet.create({
   topBar: {
