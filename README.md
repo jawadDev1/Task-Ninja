@@ -6,9 +6,6 @@ Task Ninja is a task management app build with react native expo and nodejs. It 
 
 https://github.com/jawadDev1/Task-Ninja/assets/149782239/991cef78-cb45-46a9-8bb4-2fc873aea1b0
 
-https://youtu.be/Jdx4RNRSj2g?si=TwjnX11hxXfYChjR
-
-[![Watch the video](https://raw.githubusercontent.com/jawadDev1/Task-Ninja/main/img.jpg)](https://raw.githubusercontent.com/jawadDev1/Task-Ninja/main/v.mp4)
 
 ## Getting started
 
