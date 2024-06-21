@@ -8,8 +8,7 @@ https://github.com/jawadDev1/Task-Ninja/assets/149782239/991cef78-cb45-46a9-8bb4
 
 https://youtu.be/Jdx4RNRSj2g?si=TwjnX11hxXfYChjR
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Jdx4RNRSj2g?si=8twoilFaeVNIWUX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+[![Watch the video](https://raw.githubusercontent.com/jawadDev1/Task-Ninja/main/img.jpg)](https://raw.githubusercontent.com/jawadDev1/Task-Ninja/main/v.mp4)
 
 ## Getting started
 
