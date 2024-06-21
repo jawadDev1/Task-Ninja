@@ -2,7 +2,7 @@
 
 Task Ninja is a task management app build with react native expo and nodejs. It has user authentication. You can create tasks set due dates and get a notification when the due date reaches. Watch the video to see all the features.
 
- [![Watch Video]](https://youtu.be/Jdx4RNRSj2g?si=Kr5CDaPcIaqRS4nL)
+ [Watch Video](https://youtu.be/Jdx4RNRSj2g?si=Kr5CDaPcIaqRS4nL)
 
  Note: if video is not playing, you can download it and then play.
 
